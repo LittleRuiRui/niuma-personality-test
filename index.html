@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>你是哪一种打工牛马？</title>
+<meta name="description" content="15道题，测出你的职场牛马物种、牛马评级和评级机构毒舌评语。" />
+<style>
+:root{--bg:#fff8e9;--ink:#2c2923;--card:#fffdf7;--green:#cfe7a6;--yellow:#ffd97a;--orange:#ffb57b;--pink:#f6c5cc;--blue:#c9ddf4;--line:#ddcfae;--shadow:0 12px 30px rgba(63,47,25,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:ui-rounded,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:radial-gradient(circle at 15% 10%,#fff2c6 0 10%,transparent 28%),radial-gradient(circle at 90% 25%,#e8f2cf 0 9%,transparent 25%),var(--bg);color:var(--ink)}
+button{font:inherit;color:inherit}.wrap{width:min(920px,92vw);margin:auto;padding:26px 0 70px}.hero{text-align:center;padding:42px 16px 30px}.kicker{display:inline-block;background:var(--green);padding:7px 13px;border-radius:999px;font-weight:800;transform:rotate(-2deg)}h1{font-size:clamp(40px,8vw,76px);line-height:1;margin:18px 0 10px;letter-spacing:-3px}.sub{font-size:18px;line-height:1.8;max-width:650px;margin:auto}.cow{font-size:92px;display:inline-block;animation:bob 2.8s ease-in-out infinite;filter:drop-shadow(0 10px 8px rgba(0,0,0,.08))}@keyframes bob{50%{transform:translateY(-8px) rotate(2deg)}}
+.panel{background:rgba(255,253,247,.92);border:2px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--shadow);margin:18px 0}.start{text-align:center}.btn{border:2px solid var(--ink);background:var(--yellow);padding:14px 22px;border-radius:16px;font-weight:900;cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:.12s transform,.12s box-shadow}.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}.btn.secondary{background:white}.btn.small{padding:10px 14px;font-size:14px}.hidden{display:none!important}
+.progress-wrap{position:sticky;top:0;z-index:5;padding:12px 0;background:linear-gradient(var(--bg) 65%,transparent)}.progress{height:12px;background:#eee3ca;border:2px solid var(--ink);border-radius:999px;overflow:hidden}.bar{height:100%;background:var(--green);width:0;transition:.25s}.q-num{font-size:14px;font-weight:900;opacity:.65;margin-bottom:8px}.question h2{font-size:26px;line-height:1.35;margin:0 0 20px}.choices{display:grid;gap:10px}.choice{width:100%;text-align:left;border:2px solid var(--line);background:white;border-radius:16px;padding:15px 16px;cursor:pointer;line-height:1.45;transition:.12s}.choice:hover{border-color:var(--ink);transform:translateX(3px);background:#fff9de}.choice b{display:inline-grid;place-items:center;width:28px;height:28px;border:2px solid var(--ink);border-radius:50%;margin-right:9px;font-size:13px;background:var(--yellow)}
+.result-head{text-align:center}.result-title{display:inline-block;font-size:clamp(36px,7vw,62px);line-height:1.1;margin:12px 0;background:var(--green);padding:8px 15px;border-radius:15px;transform:rotate(-1deg)}.tagline{font-size:20px;font-weight:800;line-height:1.6}.quote{margin:18px auto;padding:16px 18px;background:#fff1bf;border-radius:16px;max-width:700px;font-weight:750;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}.stat{background:white;border:2px solid var(--line);border-radius:16px;padding:14px}.stat-row{display:flex;justify-content:space-between;font-weight:800;margin-bottom:8px}.meter{height:10px;background:#eee7d9;border-radius:99px;overflow:hidden}.meter i{display:block;height:100%;background:var(--green);border-radius:99px}.rating{background:#fff0c6;border:2px solid var(--ink);border-radius:20px;padding:18px;text-align:center;margin:18px 0}.rating strong{font-size:44px;display:block}.agency{display:grid;gap:10px}.comment{display:flex;gap:12px;align-items:flex-start;background:white;border:2px solid var(--line);border-radius:18px;padding:14px}.avatar{font-size:30px}.comment p{margin:0;line-height:1.55}.footer-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}.ai-hook{margin-top:22px;background:linear-gradient(135deg,#eef8dc,#fff1bb);border:2px dashed var(--ink);border-radius:20px;padding:18px;text-align:center}.ai-hook h3{margin:0 0 8px;font-size:22px}.share-card{padding:24px;border:2px solid var(--ink);border-radius:24px;background:#fff8df;text-align:center;margin-top:18px}.tiny{font-size:13px;opacity:.65}.brand{font-weight:900;letter-spacing:.5px}.footer{text-align:center;margin-top:36px;font-size:13px;opacity:.6}@media(max-width:640px){.panel{padding:18px}.stats{grid-template-columns:1fr}.question h2{font-size:22px}.hero{padding-top:24px}.cow{font-size:76px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <span class="kicker">职场生存必测 · 非严肃科研</span>
+    <h1>你是哪一种<br>打工牛马？</h1>
+    <div class="cow">🐮💻</div>
+    <p class="sub">15 道离谱但可能过分准确的问题，检测你的摸鱼天赋、服从程度、职场生存力，以及你到底离创业还有多远。</p>
+  </section>
+
+  <section id="intro" class="panel start">
+    <h2>牛马评级机构郑重声明</h2>
+    <p>本测试不负责升职加薪，只负责揭露你为什么还没辞职。</p>
+    <button class="btn" onclick="startQuiz()">开始鉴定我的牛马物种</button>
+    <p class="tiny">无需登录 · 不存数据 · 老板看不到</p>
+  </section>
+
+  <section id="quiz" class="hidden">
+    <div class="progress-wrap"><div class="progress"><div id="bar" class="bar"></div></div></div>
+    <div id="questionCard" class="panel question"></div>
+  </section>
+
+  <section id="result" class="hidden"></section>
+  <div class="footer">牛马评级机构 · 纯属娱乐，但如果很准也不是我们的错。</div>
+</div>
+<script>
+const dims=['ambition','compliance','efficiency','politics','exit','ai'];
+const questions=[
+{q:'老板周五 5:47 PM 发：“有个很简单的东西，今天可以出吗？”',a:[['当然，马上做。',{compliance:3,ambition:2}],['“好的”，然后先去吃饭。',{efficiency:2,compliance:1}],['先问：具体几点需要？',{politics:2,efficiency:2}],['5:58 PM 回复：刚看到。',{efficiency:3,compliance:-1}],['开始思考为什么我要上班。',{exit:3,compliance:-2}]]},
+{q:'会议已经开了 47 分钟，你发现这件事其实发三句话就能解决。',a:[['继续认真记笔记。',{compliance:3}],['灵魂离开会议室。',{efficiency:1,exit:1}],['私下把答案做好发群里。',{efficiency:3,ambition:1}],['开始观察谁最爱说废话。',{politics:3}],['搜索“新加坡公司注册多少钱”。',{exit:4,ambition:2}]]},
+{q:'同事把一个你昨天已经解释过的问题又问了一遍。',a:[['再耐心解释一次。',{compliance:2,politics:1}],['把昨天那封邮件 forward 回去。',{efficiency:3}],['做一个模板，以后都甩模板。',{efficiency:4,ai:1}],['顺便判断他到底是真不会还是装不会。',{politics:3}],['开始计算自己离自由职业还有多久。',{exit:3}]]},
+{q:'老板说：“这个需求很简单，你看着办。” 你第一反应？',a:[['收到，立刻开干。',{compliance:3,ambition:2}],['先把 scope 问清楚。',{efficiency:2,politics:2}],['先看有没有旧版本可以抄。',{efficiency:4}],['判断这锅未来会不会回到我头上。',{politics:4}],['“简单”两个字让我产生离职冲动。',{exit:3,compliance:-1}]]},
+{q:'公司突然宣布组织架构调整。',a:[['我的客户怎么办？',{ambition:1,compliance:2}],['我的奖金没了？',{ambition:3}],['我还没听懂，但我已经知道谁会升职。',{politics:4}],['我先更新 LinkedIn。',{exit:3,politics:1}],['终于有新素材观察人类。',{politics:2,efficiency:1}]]},
+{q:'你一天中最满足的时刻是？',a:[['完成一个大项目。',{ambition:4}],['收到老板夸奖。',{compliance:3,ambition:1}],['发现一个快捷键/自动化。',{efficiency:3,ai:3}],['下班前一分钟关电脑。',{efficiency:2,exit:1}],['想到一个能自己赚钱的点子。',{exit:4,ambition:3}]]},
+{q:'如果突然给你 S$2 million，但要求你明天继续正常上班。',a:[['当然，我热爱事业。',{ambition:4,compliance:2}],['去，但迟到。',{efficiency:2,compliance:-1}],['去，看看自己还能忍几天。',{exit:3}],['去公司拿充电器。',{exit:4,efficiency:2}],['为什么 S$2m 了我还要参加 Monday stand-up？',{exit:5,compliance:-2}]]},
+{q:'你的 Excel / PPT 技能属于？',a:[['基础选手，够用。',{compliance:1}],['熟练，但不想被发现。',{efficiency:3,politics:2}],['有模板就绝不从零做。',{efficiency:4}],['能自动化的绝不手工。',{ai:4,efficiency:4}],['我更想让别人做。',{politics:2,exit:1}]]},
+{q:'同事开始疯狂加班，你怎么看？',a:[['我也加，不然显得不努力。',{compliance:3,ambition:2}],['先判断是真忙还是表演。',{politics:3}],['他卷他的，我按时交付。',{efficiency:3,compliance:-1}],['研究怎么让 AI 做掉一半。',{ai:4,efficiency:3}],['这进一步证明我应该创业。',{exit:4,ambition:2}]]},
+{q:'如果辞职，你最可能的打开方式？',a:[['提前三个月认真交接。',{compliance:4}],['找到下家再走。',{politics:2,efficiency:2}],['存够钱直接消失。',{exit:3}],['边上班边做副业。',{exit:3,ambition:3}],['先辞再说，世界很大。',{exit:5,compliance:-2}]]},
+{q:'老板在群里 @你：“这个谁来跟一下？”',a:[['我来。',{compliance:4,ambition:1}],['等 30 秒，看看有没有英雄。',{efficiency:3}],['如果没人回再接。',{politics:3,efficiency:1}],['先问清楚 deliverable。',{efficiency:2,politics:2}],['假装网络不好。',{compliance:-2,exit:2}]]},
+{q:'你怎么看办公室政治？',a:[['讨厌，我只想把事做好。',{politics:-1,ambition:1}],['不参与，但一定看得懂。',{politics:4}],['必要时会管理关系。',{politics:4,ambition:2}],['这是职场必修课。',{politics:5}],['如果要玩这个，我宁愿自己当老板。',{exit:4,compliance:-2}]]},
+{q:'你最强的超能力可能是？',a:[['耐受荒谬流程。',{compliance:4}],['快速读懂老板潜台词。',{politics:4}],['把重复工作做成模板。',{efficiency:4}],['让 AI 替我干重复活。',{ai:5,efficiency:3}],['发现这工作根本不值得做。',{exit:3,efficiency:3}]]},
+{q:'公司最让你心动的福利是什么？',a:[['升职路径明确。',{ambition:4}],['奖金高。',{ambition:3}],['弹性办公。',{efficiency:3}],['可以学到以后自己赚钱的东西。',{exit:3,ambition:3}],['没人管我怎么做。',{exit:2,compliance:-2,efficiency:2}]]},
+{q:'如果把你现在 30% 的工作交给 AI，你会？',a:[['担心自己被替代。',{ai:-1,compliance:2}],['先试试能不能省时间。',{ai:3,efficiency:2}],['直接研究怎么做到 60%。',{ai:5,efficiency:4}],['省下来的时间去做更重要的事。',{ai:3,ambition:3}],['省下来的时间想自己的生意。',{ai:3,exit:4,ambition:2}]]}
+];
+const types=[
+{id:'moyu',name:'天选摸鱼牛马',emoji:'😎🐮',tag:'你的核心竞争力不是偷懒，是准确判断什么事情根本没必要做。',fit:s=>s.efficiency*1.5-s.compliance*.3+s.ai*.4,quote:'别人卷工时，你卷单位时间产出。只要结果交得出来，过程属于个人隐私。'},
+{id:'gaopei',name:'高配怨种牛马',emoji:'😤🐮',tag:'嘴上嫌弃一切，最后还是你交付得最好。',fit:s=>s.ambition+s.compliance*.7+s.efficiency*.7-s.exit*.2,quote:'每天都在骂，项目却一个没掉。组织已经默认你会接住。'},
+{id:'juan',name:'卷王永动牛马',emoji:'🔥🐮',tag:'老板还没来得及 PUA，你已经把自己 PUA 完了。',fit:s=>s.ambition*1.8+s.compliance*.7-s.efficiency*.2,quote:'你的最大风险不是不努力，是努力这件事已经失去刹车系统。'},
+{id:'zhuangsi',name:'战略装死牛马',emoji:'🫥🐮',tag:'不是不会，是你已经看懂这件事不值得。',fit:s=>s.efficiency*1.4-s.compliance*.8+s.politics*.5,quote:'沉默不是摆烂，是风险调整后的最优策略。'},
+{id:'gongdou',name:'宫斗型牛马',emoji:'👑🐮',tag:'KPI 不一定第一，但组织存活率长期跑赢大盘。',fit:s=>s.politics*1.8+s.efficiency*.4+s.ambition*.3,quote:'你不一定知道 Excel 每个公式，但你很清楚这份 Excel 应该抄送给谁。'},
+{id:'huangniu',name:'情绪稳定老黄牛',emoji:'🧘🐮',tag:'公司真正的承重墙，什么破事最后都能落到你头上。',fit:s=>s.compliance*1.5+s.ambition*.4-s.exit*.4,quote:'你的可靠性已经从优点逐渐演变成组织公共基础设施。'},
+{id:'lizhisuodinge',name:'薛定谔离职牛马',emoji:'🧳🐮',tag:'每天都想辞职，但工牌始终稳定挂在脖子上。',fit:s=>s.exit*1.4+s.compliance*.5+s.politics*.2,quote:'简历已经改了很多版，真正没更新的是离职日期。'},
+{id:'xuexi',name:'带薪学习型牛马',emoji:'📚🐮',tag:'公司只是训练营，工资是奖学金，项目是 case study。',fit:s=>s.ambition+s.efficiency*.6+s.exit*.6,quote:'你不是忠诚于公司，你忠诚于自己的下一版本。'},
+{id:'fanxiang',name:'反向管理型牛马',emoji:'📋🐮',tag:'到底谁是谁老板，偶尔需要重新确认。',fit:s=>s.politics*1.2+s.efficiency+s.compliance*.1,quote:'老板给你任务，你给老板 timeline、scope 和 next step。管理闭环形成。'},
+{id:'ai',name:'AI 外骨骼牛马',emoji:'🤖🐮',tag:'同事以为你效率高，其实你已经偷偷把一半工作外包给机器。',fit:s=>s.ai*1.8+s.efficiency*.9,quote:'你不是一个人在上班。你的 API 也在上班。'},
+{id:'boss',name:'误入职场的野生老板',emoji:'🦁🐮',tag:'你不是讨厌工作，你只是非常不喜欢别人决定你该怎么工作。',fit:s=>s.exit*1.3+s.ambition*.9-s.compliance*.8+s.efficiency*.4,quote:'系统多次尝试把你归入牛马物种，均告失败。建议谨慎续费公司生活。'},
+{id:'human',name:'已解除劳动关系的人类',emoji:'🌴🧍',tag:'你甚至已经不是牛马，上班只是你当前的融资方式。',fit:s=>s.exit*1.8-s.compliance*.9+s.ai*.3,quote:'精神已上市，肉身仍处于试用期。主线任务：赎回时间。'}
+];
+const comments=[
+'我们尊重每一种牛马的努力，尤其是那些边骂边做完的人。',
+'你的努力我们看在眼里，就是不知道老板看没看见。',
+'有人吃不了学习的苦，你吃了上班的苦。',
+'你不是卷不过别人，你是卷不过系统。',
+'别人把公司当家，你把公司当大型社会学田野调查。',
+'打工只是生活的副本，主线任务是自由。',
+'你的职场技能点已经出现明显偏科，但偏得很有战略性。',
+'系统建议：少参加没有 agenda 的会议，多参加有预算的项目。',
+'你最大的风险不是被裁，是哪天真的想明白了。',
+'评级委员会一致认为：你还能干，但不一定还想干。'
+];
+let i=0,scores={ambition:0,compliance:0,efficiency:0,politics:0,exit:0,ai:0};
+function startQuiz(){document.getElementById('intro').classList.add('hidden');document.getElementById('quiz').classList.remove('hidden');renderQ()}
+function renderQ(){const q=questions[i];document.getElementById('bar').style.width=(i/questions.length*100)+'%';document.getElementById('questionCard').innerHTML=`<div class="q-num">第 ${i+1} / ${questions.length} 题</div><h2>${q.q}</h2><div class="choices">${q.a.map((x,j)=>`<button class="choice" onclick="pick(${j})"><b>${String.fromCharCode(65+j)}</b>${x[0]}</button>`).join('')}</div>`}
+function pick(j){Object.entries(questions[i].a[j][1]).forEach(([k,v])=>scores[k]+=v);i++;if(i<questions.length)renderQ();else showResult()}
+function norm(v){return Math.max(5,Math.min(99,Math.round(50+v*4.2)))}
+function showResult(){document.getElementById('quiz').classList.add('hidden');const result=document.getElementById('result');result.classList.remove('hidden');const t=[...types].sort((a,b)=>b.fit(scores)-a.fit(scores))[0];const n={};dims.forEach(d=>n[d]=norm(scores[d]));const work=(n.compliance*.22+n.ambition*.18+n.efficiency*.18+n.politics*.14+n.ai*.14+(100-n.exit)*.14);let grade=work>78?'AAA':work>68?'AA':work>58?'A':work>48?'BBB':work>38?'BB':work>28?'B':work>18?'CCC':'D';const gradeText={AAA:'极强偿饼能力，可稳定偿还老板画的大饼。',AA:'优质执行主体，偶尔会在厕所进行风险对冲。',A:'整体表现良好，但已出现精神折旧迹象。',BBB:'目前尚能维持工作，存在突然更新 LinkedIn 风险。',BB:'需要更多激励，例如涨薪、放假或允许不参加会议。',B:'组织黏性较弱，建议老板不要再说“年轻人要有格局”。',CCC:'主体持续经营能力存在重大不确定性。',D:'已发生实质性违约，工作时间多次打开招聘网站。'}[grade];const statNames={ambition:'上进心',compliance:'服从指数',efficiency:'摸鱼效率',politics:'职场生存力',exit:'跑路冲动',ai:'AI 外骨骼'};const cs=[...comments].sort(()=>Math.random()-.5).slice(0,4);result.innerHTML=`<div class="panel result-head"><div style="font-size:58px">${t.emoji}</div><div class="tiny">你的检测结果是</div><div class="result-title">${t.name}</div><div class="tagline">${t.tag}</div><div class="quote">“${t.quote}”</div><div class="stats">${dims.map(d=>`<div class="stat"><div class="stat-row"><span>${statNames[d]}</span><span>${n[d]}%</span></div><div class="meter"><i style="width:${n[d]}%"></i></div></div>`).join('')}</div><div class="rating"><span>牛马评级</span><strong>${grade}</strong><div>${gradeText}</div></div><h3>来自牛马评级机构的特别留言</h3><div class="agency">${cs.map((c,j)=>`<div class="comment"><div class="avatar">${['🐮','🐂','🐄','🦬'][j]}</div><p>${c}</p></div>`).join('')}</div><div class="ai-hook"><h3>我们还发现：你有一部分工作根本不该由人类完成。</h3><p>下一站：测测 AI 到底能帮你干掉多少牛马活。</p><button class="btn small" onclick="alert('第二阶段即将开放：AI 牛马减负检测')">测测我的 AI 减负潜力 →</button></div><div class="share-card"><div class="brand">牛马评级机构</div><h2>${t.emoji} ${t.name}</h2><p>${t.tag}</p><b>评级：${grade}</b><p class="tiny">你也来测：你是哪一种打工牛马？</p></div><div class="footer-actions"><button class="btn" onclick="shareResult('${t.name}','${grade}')">分享结果</button><button class="btn secondary" onclick="location.reload()">再测一次</button></div></div>`;window.scrollTo({top:0,behavior:'smooth'})}
+async function shareResult(name,grade){const text=`我被检测成「${name}」，牛马评级 ${grade}。你是哪一种打工牛马？`;if(navigator.share){try{await navigator.share({title:'你是哪一种打工牛马？',text,url:location.href});return}catch(e){}}try{await navigator.clipboard.writeText(text+' '+location.href);alert('结果文案和链接已复制，可以去群里抓下一头牛马了。')}catch(e){alert(text)}}
+</script>
+</body>
+</html>
